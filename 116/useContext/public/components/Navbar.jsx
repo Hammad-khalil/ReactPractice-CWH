@@ -1,11 +1,11 @@
 import Button from "./Button"
-const Navbar = () => {
+const Navbar = ({ count }) => {
     return (
         <>
             <div>
                 I am Navbar
             </div>
-            <Button />
+            <Button count={count} />
         </>
     )
 }
