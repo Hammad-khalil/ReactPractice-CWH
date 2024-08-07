@@ -1,15 +1,18 @@
-import { useContext } from "react"
-import { counterContext } from "../Context/Context"
+import { useContext } from "react";
+import { counterContext } from "../Context/Context";
+
 const Component1 = () => {
-    const counter = useContext(counterContext)
+    const { count, name } = useContext(counterContext);
+
     return (
         <>
             <div>
-                component 1 mein agaya count finally 🥳
+                Component 1 mein agaya count aur name finally 🥳
             </div>
-            <h6>{counter}</h6>
+            <h6>Counter: {count}</h6>
+            <h6>Name: {name}</h6>
         </>
-    )
+    );
 }
 
-export default Component1
+export default Component1;
