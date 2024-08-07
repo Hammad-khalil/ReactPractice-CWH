@@ -1,17 +1,15 @@
-import { Link } from "react-router-dom"
-const Navbar = () => {
-  
-  return (
-    <div >
-    <nav >
-        <ul style={{display:"flex", gap:"20px",listStyle:"none"}}>
-            <Link to="/"><li>Home</li></Link>
-            <Link to="/about"><li>About us</li></Link>
-            <Link to="/login"><li>Login</li></Link>
-        </ul>
-    </nav>
-    </div>
-  )
-}
+import { Link } from "react-router-dom";
 
-export default Navbar
+const Navbar = () => {
+  return (
+    <nav>
+      <ul style={{ display: "flex", gap: "20px", listStyle: "none" }}>
+        <Link to="/"><li>Home</li></Link>
+        <Link to="/about"><li>About Us</li></Link>
+        <Link to="/login"><li>Login</li></Link>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;
